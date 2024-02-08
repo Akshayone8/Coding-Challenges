@@ -38,7 +38,7 @@ var maximumNumberOfStringPairs = function (words) {
 
   for (const word of words) {
     const reversedWord = word.split("").reverse().join("");
-
+    console.log(reversedWord);
     if (reversedSet.has(reversedWord)) {
       count++;
 

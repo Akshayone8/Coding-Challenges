@@ -8,8 +8,9 @@ function printNumber(n) {
     for (let j = 1; j <= i; j++) {
       result += j;
     }
+    result += ",";
   }
-  result += ",";
+
   return result;
 }
 
