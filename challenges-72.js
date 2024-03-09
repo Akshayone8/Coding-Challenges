@@ -29,7 +29,7 @@
 
 // #Solution
 
-function name(l1, l2) {
+function names(l1, l2) {
   let newArr = [];
   let minIndexSum = Infinity;
   debugger;
@@ -49,7 +49,7 @@ function name(l1, l2) {
   return newArr;
 }
 
-const result = name(
+const result = names(
   ["Shogun", "Tapioca Express", "Burger King", "KFC"],
   ["KFC", "Shogun", "Burger King"]
 );
