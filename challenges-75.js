@@ -32,4 +32,4 @@ var test2 = function (s, k) {
   return s.split(" ").splice(0, k).join(" ");
 };
 
-test2("chopper is not a tanuki", 5);
+test2("What is the solution to this problem", 4);
