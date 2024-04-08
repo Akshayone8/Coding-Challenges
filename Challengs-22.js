@@ -12,10 +12,25 @@
 
 // #solution
 
-
-function sortByLength (array) {
+function sortByLength(array) {
   // Return an array containing the same strings, ordered from shortest to longest
-  return array.sort((a,b)=>a.length-b.length)
-};
+  return array.sort((a, b) => a.length - b.length);
+}
 
-sortByLength(["Beg", "Life", "I", "To"])
+sortByLength(["Beg", "Life", "I", "To"]);
+
+// ---------------------------- or ------------------------------
+
+function test(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    for (j = 0; j < arr.length - i - 1; j++) {
+      if (arr[j].length > arr[j + 1].length) {
+        let result = arr[j];
+        arr[j] = arr[j + 1];
+        arr[j + 1] = result;
+      }
+    }
+  }
+  return arr;
+}
+test(["Telescopes", "Glasses", "Eyes", "Monocles"]);
