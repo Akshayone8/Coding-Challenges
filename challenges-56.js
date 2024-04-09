@@ -56,3 +56,20 @@ const example2 = ["ab", "ba", "cc"];
 
 console.log(maxNumOfPairs(example1)); // Output: 2
 console.log(maxNumOfPairs(example2)); // Output: 1
+
+// ---------------------or -----------------------
+
+function test(arr) {
+  let newArr = [];
+  let count = 0;
+  for (let i = 0; i < arr.length; i++) {
+    let reverseWord = arr[i].split("").reverse().join("");
+    if (newArr.includes(reverseWord)) {
+      count++;
+    } else {
+      newArr.push(arr[i]);
+    }
+  }
+  return count;
+}
+test(["cd", "ac", "dc", "ca", "zz"]);

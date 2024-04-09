@@ -19,6 +19,7 @@
 
 var sortPeople = function (names, heights) {
   let newArr = [];
+  console.log(newArr);
   for (let i = 0; i < names.length; i++) {
     newArr.push({ names: names[i], heights: heights[i] });
   }

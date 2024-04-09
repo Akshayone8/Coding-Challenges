@@ -13,6 +13,7 @@ function snake(str) {
       result += item;
     }
   });
+  console.log(result);
   let one = result[0].toUpperCase();
   return one + result.slice(1);
 }

@@ -16,6 +16,7 @@
 // Explanation: The first character in the words "an" and "apple" are 'a' and 'a', respectively.
 // The acronym formed by concatenating these characters is "aa".
 // Hence, s = "a" is not the acronym.
+
 // Example 3:
 
 // Input: words = ["never","gonna","give","up","on","you"], s = "ngguoy"
