@@ -73,3 +73,4 @@ function test(arr) {
   return count;
 }
 test(["cd", "ac", "dc", "ca", "zz"]);
+test(["ab", "ba", "cc"]);

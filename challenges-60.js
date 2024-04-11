@@ -27,6 +27,7 @@
 function isPalindrome(word) {
   return word === word.split("").reverse().join("");
 }
+
 var firstPalindrome = function (words) {
   for (const word of words) {
     if (isPalindrome(word)) {

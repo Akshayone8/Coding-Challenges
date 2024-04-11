@@ -17,6 +17,7 @@
 // - "4" also consists only of digits, so its value is 4.
 // - "00000" consists only of digits, so its value is 0.
 // Hence, the maximum value is 5, of "alic3".
+
 // Example 2:
 
 // Input: strs = ["1","01","001","0001"]
