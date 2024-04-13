@@ -24,7 +24,6 @@
 //#Solution
 
 var fib = function (n) {
-  if (n <= 1) return 1;
   let newArr = [0, 1];
   for (let i = 2; i <= n; i++) {
     newArr.push(newArr[i - 1] + newArr[i - 2]);
