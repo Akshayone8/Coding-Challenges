@@ -5,13 +5,11 @@
 // solution('abc', 'bc') // returns true
 // solution('abc', 'd') // returns false
 
-
 // #solution
 
-
-function solution(str, ending){
+function solution(str, ending) {
   // TODO: complete
-  return str.endsWith(ending)
+  return str.endsWith(ending);
 }
 
-solution('abcde', 'abc')
+solution("abcde", "abc");
