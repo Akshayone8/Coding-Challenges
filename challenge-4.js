@@ -19,7 +19,7 @@
 // The middle character(s) of the word represented as a string.
 
 // #Solution
-
+// method-1
 function getMiddle(s) {
   let findMiddleChar = Math.floor(s.length / 2);
   return s.length % 2 === 0
