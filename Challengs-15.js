@@ -13,3 +13,13 @@ function solution(str, ending) {
 }
 
 solution("abcde", "abc");
+
+// #solution-2
+
+function solution(str, ending) {
+  if (ending.length > str.length) return false;
+  let subStart = str.substring(str.length - ending.length);
+  return subStart === ending;
+}
+
+solution("abc", "bc");
