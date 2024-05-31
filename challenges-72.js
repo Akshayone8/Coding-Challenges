@@ -54,3 +54,16 @@ const result = names(
   ["KFC", "Shogun", "Burger King"]
 );
 console.log(result);
+
+// another method
+
+function test(arr1, arr2) {
+  let newArr = [];
+  for (let i = 0; i < arr1.length; i++) {
+    if (arr1.includes(arr1[i]) && arr2.includes(arr1[i])) {
+      newArr.push(arr1.indexOf(arr1[i]) + arr2.indexOf(arr1[i]));
+    }
+  }
+  return Math.min(...newArr);
+}
+test(["happy", "sad", "good"], ["sad", "happy", "good"]);
