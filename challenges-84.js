@@ -17,3 +17,10 @@ function findShort(s) {
 
 findShort("bitcoin take over the world maybe who knows perhaps"); //3
 findShort("Let's travel abroad shall we");
+
+// Method-2
+
+function findShort(str) {
+  return Math.min(...str.split(" ").map((item) => item.length));
+}
+findShort("Let's travel abroad shall we");
