@@ -46,7 +46,33 @@
 // 1 <= strs[i].length <= 1000
 // strs[i] consists of lowercase English letters.
 
-// # Solution
+//#solution-1
+
+var minDeletionSize = function (strs) {
+  const n = strs.length;
+  const m = strs[0].length;
+
+  let result = 0;
+
+  for (let i = 0; i < m; i++) {
+    for (let j = 0, prevChar = ""; j < n; j++) {
+      const char = strs[j].charCodeAt(i);
+
+      if (prevChar > char) {
+        result++;
+        break;
+      }
+
+      prevChar = char;
+    }
+  }
+
+  return result;
+};
+
+console.log(minDeletionSize(["cba", "daf", "ghi"])); // Output: 1
+
+// # Solution-2
 
 function minDeletionSize(strs) {
   let numColsToDelete = 0; // Initialize the counter for columns to be deleted
