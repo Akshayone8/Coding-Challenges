@@ -17,10 +17,11 @@
 
 var restoreString = function (s, indices) {
   let test = [];
+  let newAr = s.split("");
   for (let i = 0; i < indices.length; i++) {
-    let newArr = s.split("");
-    test.push(newArr[indices.join("").indexOf(i)]);
+    test.push(newAr[indices.indexOf(i)]);
   }
+
   return test.join("");
 };
 
