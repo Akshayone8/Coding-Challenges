@@ -40,6 +40,6 @@ var haveConflict = function (event1, event2) {
 };
 
 // Example usage:
-console.log(haveConflict(["01:15", "02:00"], ["02:00", "03:00"])); // true
+console.log(haveConflict(["10:00", "11:00"], ["09:30", "10:30"])); // true
 console.log(haveConflict(["01:00", "02:00"], ["01:20", "03:00"])); // true
 console.log(haveConflict(["10:00", "11:00"], ["14:00", "15:00"])); // false
