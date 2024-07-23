@@ -19,18 +19,18 @@
 
 // #solution
 
-function points(games) {
-  // your code here
-  
-  return games.reduce((acc,game)=>{
-    const [x,y]=game.split(':').map(Number) // 1:0=>["1","0"]
-    if(x>y){
-      acc+=3;
-    }else if(x===y){
-      acc+=1;
+function points(arr) {
+  let total = 0;
+  arr.forEach((item) => {
+    let [x, y] = item.split(":");
+    if (x > y) {
+      total += 3;
+    } else if (x === y) {
+      total += 1;
+    } else {
+      total += 0;
     }
-    return acc;
-  },0)
+  });
+  return total;
 }
-
-points(["1:0","2:0","3:0","4:0","2:1","3:1","4:1","3:2","4:2","4:3"])
+points(["1:0", "2:0", "3:0", "4:0", "2:1", "3:1", "4:1", "3:2", "4:2", "4:3"]);
