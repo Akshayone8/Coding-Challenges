@@ -15,6 +15,6 @@ function sums(a) {
 
 console.log(sums(1)(2)(3)(7)());
 
-//explanation
+//explanationz
 // 1 -> will go inside a parameter -> returns a funtions b -> there we are checking weather function b has any parameter if there then we are adding it and calling sums function 1+2 -> sums(3) -> it again returns function b i.e argument 3 , b is not empty -> it will call sums function again here sums(6) -> again it returns function b there we have 7 -> sums(13)
 //

@@ -6,13 +6,10 @@
 
 // Write a code that gives out the total amount for different days(d).
 
-
 // #solution
 
-
-
-function rentalCarCost(d){
-  return d >= 7 ? 40*d-50 : d>=3 ? 40*d - 20 : 40*d
+function rentalCarCost(d) {
+  return d >= 7 ? 40 * d - 50 : d >= 3 ? 40 * d - 20 : 40 * d;
 }
 
-rentalCarCost(4)
+rentalCarCost(4);

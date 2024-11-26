@@ -20,3 +20,7 @@ const calc = {
     return this;
   },
 };
+
+// Returning this: By returning this, you ensure that each method returns the calc object, allowing the next method in the chain to be called on the same object.
+// Enabling Chaining: This is what makes it possible to chain multiple method calls in one line, resulting in cleaner and more readable code.
+// So, the return this at the end of each method is essential for enabling method chaining in your calc object.
