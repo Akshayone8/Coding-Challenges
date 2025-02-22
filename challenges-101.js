@@ -1,5 +1,5 @@
 // Akshay, who is working at a software company forgot the password of his Linkedin Account. But he knows the ASCIl values of his password in reverse order.
-// Help Aman to find the password.
+// Help Akshay to find the password.
 // To decode the password, first reverse the string of digits, then successively pick valid values from the string and convert them to their ASCII equivalents. Some of the values will have two digits, and others three. Use the ranges of valid values when decoding the string of digits.
 
 // Solution
