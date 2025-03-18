@@ -29,3 +29,21 @@ function addUpSubstring(str) {
     .map(charToValue)
     .reduce((acc, item) => (acc += item), 0);
 }
+
+//2nd method
+
+function solve(str) {
+  return Math.max(
+    ...str
+      .replace(/[aeiou]+/g, " ")
+      .trim()
+      .split(" ")
+      .map((item) =>
+        item
+          .split("")
+          .map((item) => item.charCodeAt(0) - 96)
+          .reduce((ac, cu) => (ac += cu), 0)
+      )
+  );
+}
+solve("zodiacs");

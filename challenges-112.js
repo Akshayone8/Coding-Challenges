@@ -25,6 +25,26 @@
 
 // #Solution
 
+//Method - 1
+function test(arr, res) {
+  let newArr = [];
+  for (let i = 0; i < arr.length; i++) {
+    let firstChar = arr[i].split(/[a-z]/g).join("");
+    if (firstChar === res) {
+      newArr.push(true);
+    } else {
+      newArr.push(false);
+    }
+  }
+  return newArr;
+}
+test(
+  ["FooBar", "FooBarTest", "FootBall", "FrameBuffer", "ForceFeedBack"],
+  "FB"
+);
+
+// #Method - 2
+
 function camelMatch(quesries, pattern) {
   const isMatch = (query, pattern) => {
     let i = 0;

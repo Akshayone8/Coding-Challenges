@@ -20,6 +20,15 @@
 
 // #Solution
 // method-1
+
+function getMiddle(s) {
+  const mid = Math.floor(s.length / 2);
+  return s.length % 2 === 0 ? s.slice(mid - 1, mid + 1) : s[mid];
+}
+
+console.log(getMiddle("test")); // "es"
+console.log(getMiddle("tests")); // "s"
+
 function getMiddle(s) {
   let findMiddleChar = Math.floor(s.length / 2);
   return s.length % 2 === 0

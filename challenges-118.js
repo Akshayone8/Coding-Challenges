@@ -17,3 +17,9 @@ const grouped = arr.reduce((acc, curr) => {
 
 const output = Object.values(grouped);
 console.log(output);
+
+//[ {id: Array(1), marks: 26}
+
+// {id: Array(3), marks: 29}
+
+// {id: Array(2), marks: 40} ]
