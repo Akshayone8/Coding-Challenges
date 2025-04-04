@@ -6,20 +6,17 @@
 
 // Check the assertion tests for examples.
 
-
-
-
 // #solution
 
 function uniteUnique(...arr) {
-  return arr.reduce((acc,innerArr)=>{
-    innerArr.map(item=>{
-      if(!acc.includes(item)){
-        acc.push(item)
+  return arr.reduce((acc, innerArr) => {
+    innerArr.map((item) => {
+      if (!acc.includes(item)) {
+        acc.push(item);
       }
-    })
-    return acc
-    },[])
+    });
+    return acc;
+  }, []);
 }
 
-console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1]));
+console.log(uniteUnique([1, 3, 2], [5, 2, 1, 4], [2, 1])); //[1, 3, 2, 5, 4]
