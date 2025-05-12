@@ -24,16 +24,16 @@
 // #Solution
 
 var stringMatching = function (words) {
-  let resultSet = new Set();
+  let resultSet = [];
   for (let i = 0; i < words.length; i++) {
     for (let j = 0; j < words.length; j++) {
       if (i !== j && words[j].includes(words[i])) {
-        resultSet.add(words[i]);
+        resultSet.push(words[i]);
         break; // Once we find a match, we don't need to check further for the same word
       }
     }
   }
-  return Array.from(resultSet);
+  return resultSet;
 };
 
 console.log(findSubstrings(["mass", "as", "hero", "superhero"])); // Output: ["as","hero"]

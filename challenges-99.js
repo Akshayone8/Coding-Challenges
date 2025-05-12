@@ -8,16 +8,16 @@
 // Input: prices = [7,6,4,3,1]; -------->> Output:0;
 
 function maxProfit(prices) {
-  let globalProfit = 0;
+  let globalProfit = 0; // store the highest profit seen so far
 
   for (let i = 0; i < prices.length - 1; i++) {
+    // pick a buy day
     for (let j = i + 1; j < prices.length; j++) {
-      const currentProfit = prices[j] - prices[i];
-      if (currentProfit > globalProfit) globalProfit = currentProfit;
+      // pick a sell day after buy day
+      let currentProfilt = prices[j] - prices[i]; // profit = sell - buy
+      if (currentProfilt > globalProfit) globalProfit = currentProfilt; // update max profit
     }
   }
 
   return globalProfit;
 }
-
-maxProfit([7, 1, 5, 3, 6, 4]);
