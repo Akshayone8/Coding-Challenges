@@ -6,6 +6,7 @@ Welcome to my JavaScript Coding Challenges repository! 🚀 In this collection, 
 <a href="https://leetcode.com/">LeetCode</a> <br/>
 <a href="https://www.codewars.com/">CodeWars</a> <br/>
 <a href="https://www.freecodecamp.org/">freeCodeCamp</a>
+<a href="https://namastedev.com/">Namaste Dev.co</a>
 
 
 <h2>LeetCode</h2>
